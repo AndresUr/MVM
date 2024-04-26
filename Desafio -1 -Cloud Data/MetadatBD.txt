@@ -1,0 +1,22 @@
+CREATE TABLE `dwh_tp`.`employees` (
+  `employee_id` INT NULL,
+  `department_id` INT NULL,
+  `job_id` INT NULL,
+  `first_name` VARCHAR(45) NULL,
+  `last_name` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `phone_number` VARCHAR(45) NULL,
+  `contract_date` DATETIME NULL,
+  `salary` FLOAT NULL);
+
+
+CREATE TABLE `dwh_tp`.`jobs` (
+  `job_id` INT NULL,
+  `job_name` VARCHAR(45) NULL,
+  `min_salary` FLOAT NULL,
+  `max_salary` FLOAT NULL);
+
+
+CREATE TABLE `dwh_tp`.`departments` (
+  `dep_id` INT NULL,
+  `dep_name` VARCHAR(45) NULL);
